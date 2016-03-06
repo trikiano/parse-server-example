@@ -14,7 +14,7 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://heroku_sp81p25l:9m8q4b82rab4rr0fr29h8tb5o@ds019498.mlab.com:19498/heroku_sp81p25l',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'toustoyoutunvitacom',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
+  masterKey: process.env.MASTER_KEY || 'toustoyoutunvitacom', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://toustoyou.herokuapp.com/'  // Don't forget to change to https if needed
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
